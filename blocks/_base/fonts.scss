@@ -1,0 +1,48 @@
+
+/* font-family: proxima regular"; */
+@font-face {
+	font-family: "pr";
+	src: url("../fonts/proxima/regular/regular.eot");
+	src: url("../fonts/proxima/regular/regular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/proxima/regular/regular.woff") format("woff"),
+	url("../fonts/proxima/regular/regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: proxima regular"; */
+@font-face {
+	font-family: "pr";
+	src: url("../fonts/proxima/regular/regular.eot");
+	src: url("../fonts/proxima/regular/regular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/proxima/regular/regular.woff") format("woff"),
+	url("../fonts/proxima/regular/regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: proxima light"; */
+@font-face {
+	font-family: "pl";
+	src: url("../fonts/proxima/light/light.eot");
+	src: url("../fonts/proxima/light/light.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/proxima/light/light.woff") format("woff"),
+	url("../fonts/proxima/light/light.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/* font-family: playfair"; */
+@font-face {
+	font-family: "play";
+	src: url("../fonts/playfair/regular/regular.eot");
+	src: url("../fonts/playfair/regular/regular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/playfair/regular/regular.woff") format("woff"),
+	url("../fonts/playfair/regular/regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+$pr : "pr", sans-serif;
+$pl : "pl", sans-serif;
+$play : "play", sans-serif;
+$rub: 'Rubik', sans-serif;
+$rob: 'Roboto', sans-serif;

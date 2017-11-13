@@ -1,0 +1,13 @@
+mixin header(data)
+  +b.HEADER.header
+    +e.DIV.container
+      +e.DIV.logo
+        +b.A.logo(href='##')
+          +e.IMG.img(src="img/logo/logo.svg")
+      +e.DIV.nav
+        +b.NAV.header-nav
+          each item in data.menu
+            +e.DIV.item
+              +e.A.link(href=item.href)= item.text
+      +e.DIV.btn
+        +b.BUTTON.btn(class="--header") Заявка на просчет

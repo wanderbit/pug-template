@@ -1,0 +1,21 @@
+body{
+  background: red;
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  font-family: $or;
+}
+/*icons*/
+.icon{
+  display: inline-block;
+}
+@include sprites($spritesheet-sprites);
+
+/*svg sprite*/
+.svg {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
