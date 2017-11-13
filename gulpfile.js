@@ -161,8 +161,16 @@ gulp.task('imgBuild', ['clean'], function() {
 
 //copy fonts to outputDir
 gulp.task('fontsBuild', ['clean'], function() {
-	return gulp.src(paths.devDir + '/fonts/*')
+	return gulp.src(paths.devDir + '/fonts/**/*')
 		.pipe(gulp.dest(paths.outputDir + 'fonts/'));
+});
+
+
+
+//copy svg-sprites to outputDir
+gulp.task('svgSpriteBuild', ['clean'], function() {
+	return gulp.src(paths.devDir + '/svg-sprites/*')
+		.pipe(gulp.dest(paths.outputDir + 'svg-sprites/'));
 });
 
 //ftp
@@ -192,4 +200,4 @@ gulp.task('send', function() {
 gulp.task('default', ['browser-sync', 'watch', 'pug', 'scss', 'scripts']);
 
 //production
-gulp.task('prod', ['build', 'imgBuild', 'fontsBuild']);
+gulp.task('prod', ['build', 'imgBuild', 'fontsBuild','svgSpriteBuild']);
